@@ -1,34 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import Aurora from "@/components/Aurora";
+import ContactForm from "@/components/ContactForm";
+import MagicBento from "@/components/MagicBento";
+import { Button } from "@/components/ui/button";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  CheckCircle2,
-  CreditCard,
-  LineChart,
-  Lock,
-  Wallet,
-  Download,
-  Code,
-  Database,
-  Globe,
   Award,
   Briefcase,
-  GraduationCap,
-  MessageSquare,
-  Mail,
-  Github,
-  Linkedin,
   Calendar,
+  CheckCircle2,
+  Code,
+  CreditCard,
+  Database,
+  Github,
+  Globe,
+  GraduationCap,
+  LineChart,
+  Linkedin,
+  Lock,
+  Mail,
+  MessageSquare,
+  Wallet
 } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import Aurora from "@/components/Aurora";
-import ContactForm from "@/components/ContactForm";
-import WhatsAppButton from "@/components/WhatsAppButton";
-import MagicBento from "@/components/MagicBento";
-import RippleGrid from "@/bits/Backgrounds/RippleGrid/RippleGrid";
+import { useState } from "react";
 
 export default function Home() {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);

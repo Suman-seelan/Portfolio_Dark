@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export default function PreloaderWrapper({ children }: { children: React.ReactNode }) {
@@ -54,7 +55,7 @@ export default function PreloaderWrapper({ children }: { children: React.ReactNo
             transition: "opacity 0.4s",
           }}
         >
-          <img src="/assets/InfinityLoader.gif" alt="Loading..." style={{ width: 120, height: 120 }} />
+          <Image height={120} width={120} src="/assets/InfinityLoader.gif" alt="Loading..." style={{ width: 120, height: 120 }} />
         </div>
       )}
       <div style={{ opacity: mounted && loading ? 0 : 1, transition: "opacity 0.4s" }}>
